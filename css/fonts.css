@@ -1,0 +1,53 @@
+.nav, .article-duration, .archive-item-link {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+  font-weight: normal;
+}
+
+body {
+  font-family: "AvenirNext", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.6em;
+  font-weight: 500;
+  color: #333333;
+}
+
+h1 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+a {
+  font-weight: 600;
+}
+
+.cv h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+#summary p {
+  font-style: italic;
+}
+
+dt {
+  font-style: italic;
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #7F7F7F;
+}
+
+#workplace {
+  font-style: italic;
+}
+
+@media print {
+  body {
+    font-size: 1rem;
+  }
+}

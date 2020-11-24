@@ -1,0 +1,183 @@
+body {
+  margin: 0;
+  padding: 0 0 20px 0;
+  position: relative;
+  background: #FCF3D9;
+  color: #333333;
+}
+
+.wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+header {
+  padding: 20px 0;
+  position: relative;
+}
+
+.nav {
+  max-width: 800px;
+  margin: auto;
+  padding: 0 15px;
+  text-align: right;
+}
+
+.nav-profile {
+  float: left;
+  margin-top: 0px;
+  transition: transform 150ms ease-out;
+}
+
+.nav-profile img {
+  display: block;
+  max-height: 75px;
+  width: auto;
+  border-radius: 50%;
+}
+
+.nav-profile:hover {
+  transform: scale(1.2);
+}
+
+.nav-links {
+  margin: 0;
+  padding: 20px 0 0 0;
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin: 0 0 0 15px;
+}
+
+.nav-links a {
+  color: #333333;
+  text-decoration: none;
+  border-bottom: 2px dashed #67A9CF;
+}
+
+.nav-links a:hover {
+  color: #D42A20;
+  border-color: #D9A825;
+}
+
+.content {
+  max-width: 600px;
+  margin: 40px auto 10px;
+  padding: 0 15px;
+}
+
+.content a {
+  color: #333333;
+  text-decoration: none;
+  border-bottom: 2px dashed #67A9CF;
+}
+
+.content a:hover {
+  color: #D42A20;
+  border-color: #D9A825;
+}
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: #7F7F7F;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -115px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #7F7F7F transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.cv h1 {
+  border-bottom: 1px solid #7F7F7F;
+}
+
+.cv h2 {
+  margin: 0;
+}
+
+dt {
+  text-align: right;
+  padding: 0 20px 0 0;
+  width: 100px;
+  float: left;
+  height: 100px;
+  border-right: 1px solid #7F7F7F;
+}
+
+dd {
+  width: 439px;
+  float: right;
+}
+
+dd .clear {
+  float: none;
+}
+
+dd p {
+  color: #7F7F7F;
+}
+
+dd p strong {
+  color: black;
+}
+
+#workplace {
+  color: #7F7F7F;
+}
+
+#workplace .date {
+  float: right;
+}
+
+@media print {
+  header {
+    float: right;
+  }
+
+  body {
+    padding: 0;
+  }
+
+  .nav-links {
+    position: absolute;
+    visibility: hidden;
+  }
+
+  .nav-profile {
+    float: right;
+  }
+
+  .content a {
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: none;
+  }
+}
